@@ -13,7 +13,7 @@ const fetchData = async () => {
     randomBtn.disabled = true;
 
     try {
-    const res = await fetch("https://github.com/sottenad/jService/jservice.io/api/random");
+    const res = await fetch("https://jservice.io/api/random");
     const data = await res.json();
 
     let question = data[0].question;
